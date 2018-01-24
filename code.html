@@ -1,9 +1,24 @@
 <!doctype html>
 <html>
+   <script>
+document.getElementById("demo").innerHTML = time = new Date();
+var hh = time.getHours();
+var mm = time.getMinutes();
+var ss = time.getSeconds()
+document.getElementById("time").value = hh + ":" + mm + ":" + ss;
+</script>
+   
+   
 <body>
 <!--link in the time.js file(want it to run in the background without any user interaction)-->
-<link rel="stylesheet" href="style.css">   
-<!--link in the style.css file(goind to have sevrel so they can decide which one they want, default is black, but they can load others.)   
+
+<!--link in the style.css file have sevrel so they can decide which one they want, default is black-->  
+<button>
+   <link rel="stylesheet" href="style1.css">   
+      </button>
+<button>
+   <lint rel="stylesheet" href="styel2.css">
+      </button>
 
 <div id=clock>
    
