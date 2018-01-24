@@ -1,31 +1,34 @@
 <!doctype html>
 <html>
-   <script>
-document.getElementById("demo").innerHTML = time = new Date();
-var hh = time.getHours();
-var mm = time.getMinutes();
-var ss = time.getSeconds()
-document.getElementById("time").value = hh + ":" + mm + ":" + ss;
-      
-      
-      
-</script>
+  
    
    
 <body>
 <!--link in the time.js file(want it to run in the background without any user interaction)-->
 
 <!--link in the style.css file have sevrel so they can decide which one they want, default is black-->  
-<button>
-   <link rel="stylesheet" href="style1.css">   
-      </button>
-<button>
-   <lint rel="stylesheet" href="styel2.css">
-      </button>
 
+   <button type="button" onclick="document.getElementById('clock').style.fontcolor='blue'">Click Me to turn text blue!</button>
+   
+   
 <div id=clock>
    
-  
+  <p>
+     <!--insert the time here-->
+    <script>
+document.getElementById("demo").innerHTML = time = new Date();
+var hh = time.getHours();
+var mm = time.getMinutes();
+var ss = time.getSeconds()
+document.getElementById("time").value = hh + ":" + mm + ":" + ss;
+        setTimeout( get_request, 4000 );
+      
+      
+      
+</script>
+   
+   
+   </p>
   </div>
 <h2>What Can JavaScript Do?</h2>
 
